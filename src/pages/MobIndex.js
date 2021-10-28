@@ -1,18 +1,18 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
-const EnemyIndex = (props => {
+const MobIndex = (props => {
 
 
     const [newForm, setNewForm] = useState(getNewState());
 
     const loaded = () => {
-        return props.enemies.map(enemy => {
-            <div key={enemy._id} className="enemy">
-                <Link to={`/home/enemies/${enemy._id}`}>
-                    <h1>{enemy.name}</h1>
+        return props.mobs.map(mob => {
+            <div key={mob._id} className="mob">
+                <Link to={`/mobs/${mob._id}`}>
+                    <h1>{mob.name}</h1>
                 </Link>
-                <img style={{height: 200, witdh: 200, borderRadius: '10%'}} src={enemy.image} alt={enemy.name} />
+                <img style={{height: 200, witdh: 200, borderRadius: '10%'}} src={mob.image} alt={mob.name} />
             </div>
         })
     }
@@ -28,7 +28,7 @@ const EnemyIndex = (props => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        props.createEnemies(newForm)
+        props.createMobs(newForm)
         setNewForm(getNewState());
     }
 
@@ -48,7 +48,7 @@ const EnemyIndex = (props => {
                 value={newForm.name}
                 onChange={handleChange}
                 type="text"
-                placeholder="enemy Name"
+                placeholder="Mob Name"
                 name="name"
                 />
                 <input 
@@ -72,11 +72,11 @@ const EnemyIndex = (props => {
                     placeholder="Image URL"
                     name="image" 
                 />
-                <input type="submit" value="Create enemy" />
+                <input type="submit" value="Create Mob" />
             </form>
-            { props.enemies ? loaded() : loading() }
+            { props.mobs ? loaded() : loading() }
         </section>
     )
 })
 
-export default EnemyIndex;
+export default MobIndex;
