@@ -1,3 +1,5 @@
-console.log("Animal Show")
+const AnimalShow = (props) => {
+    return ("test")
+}
 
 export default AnimalShow;

@@ -1,3 +1,5 @@
-console.log("Human Show")
+const HumanShow = (props) => {
+    return ("test")
+}
 
 export default HumanShow;

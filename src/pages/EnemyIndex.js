@@ -1,3 +1,5 @@
-console.log("EnemyINdex")
+const HumanIndex = (props) => {
+    return ("test")
+}
 
-export default EnemyIndex;
+export default HumanIndex;
