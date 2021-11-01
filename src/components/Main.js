@@ -5,7 +5,8 @@ import MobShow from '../pages/MobShow';
 
 const Main = (props) => {
     const [mobs, setMobs ] = useState([]);
-    const BASE_URL = 'https://project-3-backend-app.herokuapp.com/mobs/'; 
+    // const BASE_URL = 'http://localhost:3001/mobs/'; 
+    const BASE_URL = 'https://project-3-backend-app.herokuapp.com/'; 
     const getMobs = async () => {
         const response = await fetch(BASE_URL)
         const data = await response.json();
