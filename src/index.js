@@ -3,8 +3,10 @@ import ReactDOM from 'react-dom';
 import './styles.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter as Router } from 'react-router-dom'
+import { BrowserRouter as Router } from 'react-router-dom';
 
+// HOC pattern - Higher Order Component = Higher Order Function
+// HOF Higher Order Function is a function that returns another function
 ReactDOM.render(
   <React.StrictMode>
     <Router>
