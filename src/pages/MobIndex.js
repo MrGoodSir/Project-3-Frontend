@@ -50,6 +50,7 @@ const MobIndex = (props => {
                 type="text"
                 placeholder="Mob Name"
                 name="name"
+                autoComplete="none"
                 />
                 <input 
                     value={newForm.health} 
@@ -57,6 +58,7 @@ const MobIndex = (props => {
                     type="text"
                     placeholder="Health"
                     name="health" 
+                    autoComplete="none"
                 />
                 <input 
                     value={newForm.behavior} 
@@ -64,6 +66,7 @@ const MobIndex = (props => {
                     type="text"
                     placeholder="Behavior"
                     name="behavior" 
+                    autoComplete="none"
                 />
                 <input 
                     value={newForm.image} 
@@ -71,6 +74,7 @@ const MobIndex = (props => {
                     type="url"
                     placeholder="Image URL"
                     name="image" 
+                    autoComplete="none"
                 />
                 <input type="submit" value="Create Mob" />
             </form>
