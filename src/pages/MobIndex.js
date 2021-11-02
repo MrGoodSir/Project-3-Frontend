@@ -6,10 +6,10 @@ const MobIndex = (props) => {
     const loaded = () => {
         return props.mobs.map(mob => (
             <div key={mob._id} className="mob">
+                <h1>{mob.name}</h1>
                 <Link to={`/mobs/${mob._id}`}>
-                    <h1>{mob.name}</h1>
+                    <img style={{ height: 200, width: 200, borderRadius: '50%' }} src={mob.image} alt={mob.name} />
                 </Link>
-                <img style={{height: 200, width: 200,  borderRadius: '50%'}} src={mob.image} alt={mob.name} />
             </div>
         ));
     }
@@ -19,9 +19,9 @@ const MobIndex = (props) => {
 
     const handleChange = (event) => {
         setNewForm(prevState => ({
-                ...prevState,
-                [event.target.name]: event.target.value
-            }
+            ...prevState,
+            [event.target.name]: event.target.value
+        }
         ));
     }
 
@@ -40,48 +40,48 @@ const MobIndex = (props) => {
             image: "",
         }
     }
-    
+
     return (
         <section>
             <form className="Form" onSubmit={handleSubmit}>
-                <input 
-                    value={newForm.name} 
-                    onChange={handleChange} 
+                <input
+                    value={newForm.name}
+                    onChange={handleChange}
                     type="text"
                     placeholder="Mob Name"
-                    name="name" 
+                    name="name"
                 />
-                <input 
-                    value={newForm.health} 
-                    onChange={handleChange} 
+                <input
+                    value={newForm.health}
+                    onChange={handleChange}
                     type="text"
                     placeholder="Health"
-                    name="health" 
+                    name="health"
                 />
-                <input 
-                    value={newForm.damage} 
-                    onChange={handleChange} 
+                <input
+                    value={newForm.damage}
+                    onChange={handleChange}
                     type="text"
                     placeholder="Damage"
-                    name="damage" 
+                    name="damage"
                 />
-                <input 
-                    value={newForm.armor} 
-                    onChange={handleChange} 
+                <input
+                    value={newForm.armor}
+                    onChange={handleChange}
                     type="text"
                     placeholder="Armor"
-                    name="armor" 
+                    name="armor"
                 />
-                <input 
-                    value={newForm.image} 
-                    onChange={handleChange} 
+                <input
+                    value={newForm.image}
+                    onChange={handleChange}
                     type="url"
                     placeholder="Image URL"
-                    name="image" 
+                    name="image"
                 />
                 <input type="submit" value="Create Mob" />
             </form>
-            { props.mobs ? loaded() : loading() }
+            {props.mobs ? loaded() : loading()}
         </section>
     );
 }
