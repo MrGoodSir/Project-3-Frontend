@@ -18,6 +18,9 @@
 
 [Click Here](https://project3backendapp.herokuapp.com/mobs/)  to see the application in action! 
 
+<h2>Unsolved Problems</h2>
+<li> I wasn't able to figure out how to seed the information</li>  
+  
 <h2>Future Enhancements</h2>
 
 <ul>
