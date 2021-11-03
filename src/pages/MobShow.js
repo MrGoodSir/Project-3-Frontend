@@ -34,14 +34,15 @@ const MobShow = (props) => {
         <div className="mob">
             <div className="showTopPortion">
                 <div className="showLeftHalf">
-                    <h1>{mob.name}</h1>
                     <img className="showImage" min-width="150" min-height="200" src={mob.image} alt={mob.name} />
                 </div>
+                <div className="showRightHalfContainer">
                 <div className="showRightHalf">
+                    <h1>{mob.name}</h1>
                     <h3>Health: {mob.health}</h3>
                     <h3>Armor: {mob.armor}</h3>
                     <h3>Damage: {mob.damage}</h3>
-                    <h3>Armor: {mob.health}</h3>
+                </div>
                 </div>
             </div>
             {/* <button id="delete" onClick={deleteMob}>DELETE</button> */}
@@ -58,27 +59,27 @@ const MobShow = (props) => {
                     <input
                         placeholder="Health"
                         className="indexActualInputBox"
-                        name="title"
+                        name="health"
                         onChange={handleChange}
                         value={editForm.health}
                         type="text"
                     />
-                </div>
+                    </div>
                 <div className="middleTwoInputBoxes">
-                    <input
-                        placeholder="Damage"
-                        className="indexActualInputBox"
-                        name="image"
-                        onChange={handleChange}
-                        value={editForm.damage}
-                        type="text"
-                    />
                     <input
                         placeholder="Armor"
                         className="indexActualInputBox"
-                        name="image"
+                        name="armor"
                         onChange={handleChange}
                         value={editForm.armor}
+                        type="text"
+                    />
+                    <input
+                        placeholder="Damage"
+                        className="indexActualInputBox"
+                        name="damage"
+                        onChange={handleChange}
+                        value={editForm.damage}
                         type="text"
                     />
                 </div>

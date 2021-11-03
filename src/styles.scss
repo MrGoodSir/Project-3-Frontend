@@ -32,8 +32,9 @@ html {
 
 }
 
-.headerLink {
+.link {
     text-decoration: none;
+    color: white;
     
 }
 
@@ -110,7 +111,7 @@ html {
 
 .indexImage {
     border: 5px;
-    max-width: 120px;
+    min-height: 200px;
 }
 
 .mob {
@@ -134,7 +135,8 @@ html {
 .mobContainer {
     background-color: rgb(0, 0, 0, .5);
     border-radius: 15px;
-    min-width: 300px;
+    min-height: 300px;
+    min-width: 450px;
 }
 
 .mobContainer:hover {
@@ -147,13 +149,30 @@ html {
     border-radius: 15px;
 }
 
+.showRightHalfContainer {
+    padding: 25px;
+}
+
 image {
-    min-width: 150px;
-    min-height: 250px;
+    flex: 0 0 auto;
+    width: auto;
+    height: 100px;
+    max-width: 100%;
+    margin-right: 10px;
 }
 
 .showButtons {
     padding: 5px;
+}
+
+.showImage {
+    padding: 15px;
+}
+
+.indexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .showButtonsContainer {

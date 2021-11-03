@@ -7,12 +7,12 @@ const MobIndex = (props) => {
     const loaded = () => {
         return props.mobs.map(mob => (
                 <div key={mob._id} className="mob">
+                        <Link className="link" to={`/mobs/${mob._id}`}>
                     <div className="mobContainer">
                         <h1>{mob.name}</h1>
-                        <Link to={`/mobs/${mob._id}`}>
                             <img className="indexImage" height="100" src={mob.image} alt={mob.name} />
-                        </Link>
                     </div>
+                        </Link>
                 </div>
           
         ));
@@ -99,7 +99,9 @@ const MobIndex = (props) => {
                     <input className="allSubmitButtons" type="submit" value="Create Mob" onClick={handleSubmit} />
                 </div>
             </form>
+            <div className="indexContainer">
             {props.mobs ? loaded() : loading()}
+            </div>
         </section>
     );
 }
