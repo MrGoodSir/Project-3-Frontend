@@ -63,16 +63,19 @@ html {
 .topTwoInputBoxes {
     display: flex;
     justify-content: center;
+    padding: 10px;
 }
 
 .middleTwoInputBoxes {
     display: flex;
     justify-content: center;
+    padding: 10px;
 }
 
 .bottomInputBox {
     display: flex;
     justify-content: center;
+    padding: 10px;
 }
 
 .submitButton {
@@ -147,4 +150,13 @@ html {
 image {
     min-width: 150px;
     min-height: 250px;
+}
+
+.showButtons {
+    padding: 5px;
+}
+
+.showButtonsContainer {
+    display: flex;
+    justify-content: space-evenly;
 }

@@ -35,7 +35,7 @@ const MobShow = (props) => {
             <div className="showTopPortion">
                 <div className="showLeftHalf">
                     <h1>{mob.name}</h1>
-                    <img className="showImage" width="150" height="300" src={mob.image} alt={mob.name} />
+                    <img className="showImage" min-width="150" min-height="200" src={mob.image} alt={mob.name} />
                 </div>
                 <div className="showRightHalf">
                     <h3>Health: {mob.health}</h3>
@@ -92,15 +92,16 @@ const MobShow = (props) => {
                         type="url"
                     />
                 </div>
-                <div className="submitButton">
-                    <input
-                        className="allSubmitButtons"
-                        type="submit"
-                        value="Edit Mob" action="/mobs"
-                    />
-                </div>
             </form>
-            <button className="cancelButton" onClick={handleCancel}>Cancel</button>
+
+            <div className="showButtonsContainer">
+                <div className="showButtons">
+                    <button className="allSubmitButtons" type="submit" onClick={handleSubmit}>Edit Mob</button>
+                </div>
+                <div className="showButtons">
+                    <button className="cancelButton" onClick={handleCancel}>Cancel</button>
+                </div>
+            </div>
         </div>
     );
 }

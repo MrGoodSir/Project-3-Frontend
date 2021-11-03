@@ -10,10 +10,9 @@ const MobIndex = (props) => {
                     <div className="mobContainer">
                         <h1>{mob.name}</h1>
                         <Link to={`/mobs/${mob._id}`}>
-                            <img className="indexImage" src={mob.image} alt={mob.name} />
+                            <img className="indexImage" height="100" src={mob.image} alt={mob.name} />
                         </Link>
                     </div>
-
                 </div>
           
         ));
@@ -97,7 +96,7 @@ const MobIndex = (props) => {
                     />
                 </div>
                 <div className="submitButton">
-                    <input className="allSubmitButtons" type="submit" value="Create Mob" />
+                    <input className="allSubmitButtons" type="submit" value="Create Mob" onClick={handleSubmit} />
                 </div>
             </form>
             {props.mobs ? loaded() : loading()}
