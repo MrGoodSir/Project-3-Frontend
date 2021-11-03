@@ -97,7 +97,7 @@ const MobIndex = (props) => {
                     />
                 </div>
                 <div className="submitButton">
-                    <input className="submitButtonWord" type="submit" value="Create Mob" />
+                    <input className="allSubmitButtons" type="submit" value="Create Mob" />
                 </div>
             </form>
             {props.mobs ? loaded() : loading()}

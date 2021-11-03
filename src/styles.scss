@@ -14,7 +14,7 @@ html {
 }
 
 ::placeholder {
-    color: white;
+    color: rgb(255, 255, 255, .5);
 }
 
 
@@ -22,7 +22,14 @@ html {
 .headerWord {
     color: rgb(255, 255, 255);
     text-decoration: none;
-    padding: 5px;
+    padding: 10px;
+}
+
+.headerWord:hover {
+    background-color: rgb(0, 0, 0, .5);
+    border-radius: 15px;
+    padding: 10px 10px;
+
 }
 
 .headerLink {
@@ -40,8 +47,8 @@ html {
 // Main \\
 
 .indexActualInputBox {
-    border: 5px solid green;
-    background-color: green;
+    background-image: url('https://d31sxl6qgne2yj.cloudfront.net/wordpress/wp-content/uploads/20190617153610/Minecraft-Obsidian-Block.jpg');
+    background-size: cover;
     border-radius: 10px;
     font-size: 20px;
     margin: 5px;
@@ -71,18 +78,31 @@ html {
 .submitButton {
     display: flex;
     justify-content: center;
+    padding: 15px;
 }
 
-.submitButton:hover {
-    opacity: 0.7;
-}
-
-.submitButtonWord {
+.allSubmitButtons {
     padding: 15px;
     border-radius: 15px;
     background-image: url('https://i.pinimg.com/originals/63/7d/dd/637ddd587f478f40dc7c4a3d25e67c3b.png');
     background-size: cover;
     color: rgb(255, 255, 255);
+}
+
+.allSubmitButtons:hover {
+    opacity: .8;
+}
+
+.cancelButton {
+    padding: 15px;
+    border-radius: 15px;
+    background-image: url('https://d31sxl6qgne2yj.cloudfront.net/wordpress/wp-content/uploads/20190617153605/Minecraft-Lava.jpg');
+    background-size: cover;
+    color: white;
+}
+
+.cancelButton:hover {
+    opacity: .8;
 }
 
 .indexImage {
@@ -99,6 +119,15 @@ html {
     padding: 20px;
 }
 
+.showTopPortion {
+    background-color: rgb(0, 0, 0, .5);
+    border-radius: 15px;
+    min-width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .mobContainer {
     background-color: rgb(0, 0, 0, .5);
     border-radius: 15px;
@@ -109,3 +138,13 @@ html {
     background-color:rgb(0, 0, 0, .7)
 }
 
+.showRightHalf {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 25px 40px;
+    border-radius: 15px;
+}
+
+image {
+    min-width: 150px;
+    min-height: 250px;
+}

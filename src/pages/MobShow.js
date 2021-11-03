@@ -21,6 +21,10 @@ const MobShow = (props) => {
         props.history.push('/');
     }
 
+    const handleCancel = event => {
+        props.history.push('/')
+    }
+
     // const deleteMob = () => {
     //     props.deleteMobs(mob._id);
     //     props.history.push('/');
@@ -28,53 +32,75 @@ const MobShow = (props) => {
 
     return (
         <div className="mob">
-            <h1>{mob.name}</h1>
-            <img src={mob.image} alt={mob.name} />
+            <div className="showTopPortion">
+                <div className="showLeftHalf">
+                    <h1>{mob.name}</h1>
+                    <img className="showImage" width="150" height="300" src={mob.image} alt={mob.name} />
+                </div>
+                <div className="showRightHalf">
+                    <h3>Health: {mob.health}</h3>
+                    <h3>Armor: {mob.armor}</h3>
+                    <h3>Damage: {mob.damage}</h3>
+                    <h3>Armor: {mob.health}</h3>
+                </div>
+            </div>
             {/* <button id="delete" onClick={deleteMob}>DELETE</button> */}
             <form autocomplete="off" onSubmit={handleSubmit} to="/">
                 <div className="topTwoInputBoxes">
-                <input
-                    name="name"
-                    onChange={handleChange}
-                    value={editForm.name}
-                    type="text"
-                />
-                <input
-                    name="title"
-                    onChange={handleChange}
-                    value={editForm.health}
-                    type="text"
-                />
+                    <input
+                        placeholder="Name"
+                        className="indexActualInputBox"
+                        name="name"
+                        onChange={handleChange}
+                        value={editForm.name}
+                        type="text"
+                    />
+                    <input
+                        placeholder="Health"
+                        className="indexActualInputBox"
+                        name="title"
+                        onChange={handleChange}
+                        value={editForm.health}
+                        type="text"
+                    />
                 </div>
                 <div className="middleTwoInputBoxes">
-                <input
-                    name="image"
-                    onChange={handleChange}
-                    value={editForm.damage}
-                    type="text"
-                />
-                <input
-                    name="image"
-                    onChange={handleChange}
-                    value={editForm.armor}
-                    type="text"
-                />
+                    <input
+                        placeholder="Damage"
+                        className="indexActualInputBox"
+                        name="image"
+                        onChange={handleChange}
+                        value={editForm.damage}
+                        type="text"
+                    />
+                    <input
+                        placeholder="Armor"
+                        className="indexActualInputBox"
+                        name="image"
+                        onChange={handleChange}
+                        value={editForm.armor}
+                        type="text"
+                    />
                 </div>
                 <div className="bottomInputBox">
-                <input
-                    name="image"
-                    onChange={handleChange}
-                    value={editForm.image}
-                    type="url"
-                />
+                    <input
+                        placeholder="Image URL"
+                        className="indexActualInputBox"
+                        name="image"
+                        onChange={handleChange}
+                        value={editForm.image}
+                        type="url"
+                    />
                 </div>
                 <div className="submitButton">
-                <input
-                    type="submit"
-                    value="Edit Mob" action="/mobs"
-                />
+                    <input
+                        className="allSubmitButtons"
+                        type="submit"
+                        value="Edit Mob" action="/mobs"
+                    />
                 </div>
             </form>
+            <button className="cancelButton" onClick={handleCancel}>Cancel</button>
         </div>
     );
 }
