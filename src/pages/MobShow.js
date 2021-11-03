@@ -18,6 +18,7 @@ const MobShow = (props) => {
         event.preventDefault();
         const { _id, name, health, damage, armor, image } = editForm;
         props.updateMobs({ name, health, damage, armor, image }, _id);
+        props.history.push('/');
     }
 
     const deleteMob = () => {
@@ -30,7 +31,7 @@ const MobShow = (props) => {
             <h1>{mob.name}</h1>
             <img src={mob.image} alt={mob.name} />
             <button id="delete" onClick={deleteMob}>DELETE</button>
-            <form onSubmit={handleSubmit} to="/">
+            <form autocomplete="off" onSubmit={handleSubmit} to="/">
                 <input
                     name="name"
                     onChange={handleChange}

@@ -1,3 +1,12 @@
+html {
+    background-image: url('https://scontent-lax3-2.xx.fbcdn.net/v/t31.18172-8/14242423_1199161826772010_8426076087215177497_o.jpg?_nc_cat=103&ccb=1-5&_nc_sid=e3f864&_nc_ohc=J7o9VSn1UW0AX_3MVCn&_nc_ht=scontent-lax3-2.xx&oh=3a019e5f320aeaa63522e71e23234f4f&oe=61A60938');
+    background-size: cover;
+}
+
+// =========================================================================================================== //
+
+// Header \\
+
 .header {
     display: flex;
     justify-content: center;
@@ -26,6 +35,10 @@
     opacity: 0.5;
 }
 
+// =========================================================================================================== //
+
+// Main \\
+
 .indexActualInputBox {
     border: 5px solid green;
     background-color: green;
@@ -36,8 +49,8 @@
 }
 
 .indexActualInputBox:hover {
-    border: 5px solid rgb(81, 224, 146);
     border-radius: 15px;
+    opacity: 0.5;
 }
 
 .topTwoInputBoxes {
@@ -58,7 +71,10 @@
 .submitButton {
     display: flex;
     justify-content: center;
+}
 
+.submitButton:hover {
+    opacity: 0.7;
 }
 
 .submitButtonWord {
@@ -69,15 +85,22 @@
     color: rgb(255, 255, 255);
 }
 
-.App {
-    background-image: url('https://scontent-lax3-2.xx.fbcdn.net/v/t31.18172-8/14242423_1199161826772010_8426076087215177497_o.jpg?_nc_cat=103&ccb=1-5&_nc_sid=e3f864&_nc_ohc=J7o9VSn1UW0AX_3MVCn&_nc_ht=scontent-lax3-2.xx&oh=3a019e5f320aeaa63522e71e23234f4f&oe=61A60938');
-}
-
-.mobArray {
-    display: flex;
-    justify-content: center;
+.indexImage {
+    border: 5px;
+    max-width: 120px;
 }
 
 .mob {
-    max-width: 200px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.mobContainer {
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 15px;
+    min-width: 300px;
 }
