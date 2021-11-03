@@ -3,9 +3,9 @@ import { useState } from 'react';
 
 const MobIndex = (props) => {
     const [newForm, setNewForm] = useState(getNewState());
+    
     const loaded = () => {
         return props.mobs.map(mob => (
-            <div classname="mobArray">
                 <div key={mob._id} className="mob">
                     <div className="mobContainer">
                         <h1>{mob.name}</h1>
@@ -15,9 +15,11 @@ const MobIndex = (props) => {
                     </div>
 
                 </div>
-            </div>
+          
         ));
+       
     }
+    
     const loading = () => <h1>Loading ...</h1>;
 
 
