@@ -12,10 +12,14 @@
 <li>Schema/Model Technology</li>
 <li>Heroku</li>
 <li>Netlify</li> 
+<li>MongoDB</li>
+<li>Mongoose</li>
 </ul>
 
 <h2>Getting Started</h2>
 
+[My Trello Board!](https://trello.com/b/2M1HIiR0/project-3-plans)
+  
 [Click Here](https://project3backendapp.herokuapp.com/mobs/)  to see the application in action! 
 
 <h2>Unsolved Problems</h2>
@@ -32,9 +36,8 @@
 <h2>Take a look!</h2>
 
 
-![Screenshot!]()
-![Screenshot!]()
-![Screenshot!]()
+![Screenshot!](Screenshot1.png)
+![Screenshot!](Screenshot2.png)
 
 
 
