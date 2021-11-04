@@ -20,7 +20,7 @@
 
 [My Trello Board!](https://trello.com/b/2M1HIiR0/project-3-plans)
   
-[Click Here](https://project3backendapp.herokuapp.com/mobs/)  to see the application in action! 
+[Click Here](https://competent-jang-98b344.netlify.app/)  to see the application in action! 
 
 <h2>Unsolved Problems</h2>
 <li> I wasn't able to figure out how to seed the information</li>  
