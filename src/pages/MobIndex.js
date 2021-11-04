@@ -70,19 +70,19 @@ const MobIndex = (props) => {
                 <div className="middleTwoInputBoxes">
                     <input
                         className="indexActualInputBox"
-                        value={newForm.damage}
-                        onChange={handleChange}
-                        type="text"
-                        placeholder="Damage"
-                        name="damage"
-                    />
-                    <input
-                        className="indexActualInputBox"
                         value={newForm.armor}
                         onChange={handleChange}
                         type="text"
                         placeholder="Armor"
                         name="armor"
+                    />
+                    <input
+                        className="indexActualInputBox"
+                        value={newForm.damage}
+                        onChange={handleChange}
+                        type="text"
+                        placeholder="Damage"
+                        name="damage"
                     />
                 </div>
                 <div className="bottomInputBox">
