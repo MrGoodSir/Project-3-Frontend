@@ -36,8 +36,8 @@
 <h2>Take a look!</h2>
 
 
-![Screenshot!](Screenshot1.png)
-![Screenshot!](Screenshot2.png)
+![Screenshot!](Screenshot1.PNG)
+![Screenshot!](Screenshot2.PNG)
   
 
 
