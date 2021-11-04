@@ -12,11 +12,15 @@
 <li>Schema/Model Technology</li>
 <li>Heroku</li>
 <li>Netlify</li> 
+<li>MongoDB</li>
+<li>Mongoose</li>
 </ul>
 
 <h2>Getting Started</h2>
 
-[Click Here](https://project3backendapp.herokuapp.com/mobs/)  to see the application in action! 
+[My Trello Board!](https://trello.com/b/2M1HIiR0/project-3-plans)
+  
+[Click Here](https://competent-jang-98b344.netlify.app/)  to see the application in action! 
 
 <h2>Unsolved Problems</h2>
 <li> I wasn't able to figure out how to seed the information</li>  
@@ -32,9 +36,9 @@
 <h2>Take a look!</h2>
 
 
-![Screenshot!]()
-![Screenshot!]()
-![Screenshot!]()
+![Screenshot!](Screenshot1.PNG)
+![Screenshot!](Screenshot2.PNG)
+  
 
 
 
