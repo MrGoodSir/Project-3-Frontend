@@ -3,22 +3,22 @@ import { useState } from 'react';
 
 const MobIndex = (props) => {
     const [newForm, setNewForm] = useState(getNewState());
-    
+
     const loaded = () => {
         return props.mobs.map(mob => (
-                <div key={mob._id} className="mob">
-                        <Link className="link" to={`/mobs/${mob._id}`}>
+            <div key={mob._id} className="mob">
+                <Link className="link" to={`/mobs/${mob._id}`}>
                     <div className="mobContainer">
                         <h1>{mob.name}</h1>
-                            <img className="indexImage" height="100" src={mob.image} alt={mob.name} />
+                        <img className="indexImage" height="100" src={mob.image} alt={mob.name} />
                     </div>
-                        </Link>
-                </div>
-          
+                </Link>
+            </div>
+
         ));
-       
+
     }
-    
+
     const loading = () => <h1>Loading ...</h1>;
 
 
@@ -100,7 +100,7 @@ const MobIndex = (props) => {
                 </div>
             </form>
             <div className="indexContainer">
-            {props.mobs ? loaded() : loading()}
+                {props.mobs ? loaded() : loading()}
             </div>
         </section>
     );

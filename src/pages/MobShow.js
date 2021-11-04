@@ -37,12 +37,12 @@ const MobShow = (props) => {
                     <img className="showImage" min-width="150" min-height="200" src={mob.image} alt={mob.name} />
                 </div>
                 <div className="showRightHalfContainer">
-                <div className="showRightHalf">
-                    <h1>{mob.name}</h1>
-                    <h3>Health: {mob.health}</h3>
-                    <h3>Armor: {mob.armor}</h3>
-                    <h3>Damage: {mob.damage}</h3>
-                </div>
+                    <div className="showRightHalf">
+                        <h1>{mob.name}</h1>
+                        <h3>Health: {mob.health}</h3>
+                        <h3>Armor: {mob.armor}</h3>
+                        <h3>Damage: {mob.damage}</h3>
+                    </div>
                 </div>
             </div>
             {/* <button id="delete" onClick={deleteMob}>DELETE</button> */}
@@ -64,7 +64,7 @@ const MobShow = (props) => {
                         value={editForm.health}
                         type="text"
                     />
-                    </div>
+                </div>
                 <div className="middleTwoInputBoxes">
                     <input
                         placeholder="Armor"

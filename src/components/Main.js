@@ -4,9 +4,9 @@ import MobIndex from '../pages/MobIndex';
 import MobShow from '../pages/MobShow';
 
 const Main = (props) => {
-    const [mobs, setMobs ] = useState([]);
+    const [mobs, setMobs] = useState([]);
     // const BASE_URL = 'http://localhost:3001/mobs/'; 
-    const BASE_URL = 'https://project3backendapp.herokuapp.com/mobs/'; 
+    const BASE_URL = 'https://project3backendapp.herokuapp.com/mobs/';
     const getMobs = async () => {
         const response = await fetch(BASE_URL, {
             method: 'GET',
@@ -26,7 +26,7 @@ const Main = (props) => {
             },
             body: JSON.stringify(mob)
         });
-        
+
         getMobs();
     }
 
@@ -42,10 +42,10 @@ const Main = (props) => {
     }
 
 
-    const deleteMobs = async id => {
-        await fetch(BASE_URL + id, { method: 'DELETE'});
-        getMobs();
-    }
+    // const deleteMobs = async id => {
+    //     await fetch(BASE_URL + id, { method: 'DELETE'});
+    //     getMobs();
+    // }
 
     useEffect(() => getMobs(), [])
 
@@ -58,14 +58,14 @@ const Main = (props) => {
                 </Route>
                 <Route path="/mobs/:id" render={(rp) => (
                     mobs.length ?
-                        <MobShow 
+                        <MobShow
                             {...rp}
-                            mobs={mobs} 
+                            mobs={mobs}
                             updateMobs={updateMobs}
-                            deleteMobs={deleteMobs}
+                        // deleteMobs={deleteMobs}
                         />
-                    :
-                    <Redirect to="/" />
+                        :
+                        <Redirect to="/" />
                 )} />
                 <Route to="/404">
                     <div>
